@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowBigLeft, ArrowBigRight } from "lucide";
+import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
 const sliderData = [
   {
@@ -41,15 +41,16 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-sky-100 flex items-center justify-center p-5">
-      <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-12">
+    <div className="min-h-screen bg-sky-100 flex flex-col items-center justify-center p-6">
+      {/* Baris 1 */}
+      <div className="max-w-6xl w-full flex flex-col lg:flex-row items-center gap-12">
         <div className="relative w-full lg:w-1/2 flex justify-center">
-          <div className="absolute inset-0 bg-gray-300 rounded-3xl rotate-3 sclae-95 opacity-50"></div>
+          <div className="absolute inset-0 bg-gray-300 rounded-3xl rotate-3 scale-95 opacity-50"></div>
 
           <img
             src={sliderData[currentIndex].image}
             alt={sliderData[currentIndex].title}
-            className="relative z-10 w-full h-100 object-cover rounded-3xl shadow-2xl transition-all duration-500"
+            className="relative z-10 w-full h-96 object-cover rounded-3xl shadow-2xl transition-all duration-500"
           />
         </div>
 
@@ -61,6 +62,23 @@ function App() {
             {sliderData[currentIndex].description}
           </p>
         </div>
+      </div>
+
+      {/* Baris 2 */}
+      <div className="flex gap-5 mt-10">
+        <button
+          onClick={preSlide}
+          className="p-4 rounded-full bg-white shadow-lg hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95"
+        >
+          <ArrowBigLeft size={32} />
+        </button>
+
+        <button
+          onClick={nextSlide}
+          className="p-4 rounded-full bg-white shadow-lg hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95"
+        >
+          <ArrowBigRight size={32} />
+        </button>
       </div>
     </div>
   );
