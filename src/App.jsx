@@ -70,14 +70,14 @@ function App() {
           onClick={preSlide}
           className="p-4 rounded-full bg-white shadow-lg hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95"
         >
-          <ArrowBigLeft size={32} />
+          <ArrowBigLeft />
         </button>
 
         <button
           onClick={nextSlide}
           className="p-4 rounded-full bg-white shadow-lg hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95"
         >
-          <ArrowBigRight size={32} />
+          <ArrowBigRight />
         </button>
       </div>
     </div>
