@@ -7,7 +7,7 @@ const sliderData = [
       "https://images.unsplash.com/photo-1703248187251-c897f32fe4ec?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "The Giant Panda",
     description:
-      "The giant panda is a striking bear species native to the high altitude bamboo forests of central China, instantly recognizable by its bold black and white coat and distinctive dark eye patches. Although they belong to the order Carnivora, these gentle giants are almost exclusively herbivorous, spending up to fourteen hours a day consuming vast amounts of bamboo to maintain their energy. Beyond their famous appearance, pandas possess unique biological adaptations, such as an elongated wrist bone that functions like a thumb for gripping stalks. Known for their solitary and peaceful temperament, they have become a global icon for wildlife conservation, representing both the beauty of nature and the ongoing efforts to protect endangered habitats.",
+      "The giant panda is a famous bear from the high forests of China. They are easy to recognize because of their black and white fur and the dark circles around their eyes. Even though they are bears, they almost only eat bamboo. In fact, they spend about 14 hours every day eating! A very cool thing about pandas is their 'thumb' which is actually a special wrist bone that helps them hold bamboo tightly. They are peaceful animals and are now a symbol of protecting nature.",
   },
   {
     image:
