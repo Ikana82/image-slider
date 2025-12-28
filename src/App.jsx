@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ArrowBigLeft, ArrowBigRight } from "lucide";
 
 const sliderData = [
   {
@@ -19,6 +20,23 @@ const sliderData = [
     image:
       "https://images.unsplash.com/photo-1575187105891-be9b5d30cecd?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "The Wild Elephant",
-    description: "",
+    description:
+      "The wild elephant is the world's largest land mammal, a gentle yet formidable giant that roams the diverse landscapes of Africa and Asia. Characterized by its versatile trunk—a marvel of nature containing over 100,000 muscle units—this appendage serves as a nose, a hand, and a signaling tool, allowing the elephant to do everything from uprooting trees to delicately plucking a single leaf. These intelligent creatures are famous for their matriarchal social structure, where herds are led by the oldest and wisest female and for their profound emotional depth, often showing signs of empathy and grief. Equipped with massive ears that radiate heat to stay cool and ivory tusks used for both defense and digging, the wild elephant remains a cornerstone of its ecosystem, symbolizing ancient wisdom and enduring strength.",
   },
 ];
+
+function App() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const preSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? sliderData.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === sliderData.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+}
